@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm add *)",
+      "Bash(npx tsc *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:d.get\\(k\\) for k in ['exports','main','types','react-native']}, indent=2\\)\\)\")",
+      "Bash(node -e \"const {getReactNativePersistence} = require\\('firebase/auth'\\); console.log\\(typeof getReactNativePersistence\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({'exports': list\\(d.get\\('exports',{}\\).keys\\(\\)\\)[:20], 'main': d.get\\('main'\\), 'react-native': d.get\\('react-native'\\)}, indent=2\\)\\)\")",
+      "Bash(python3 *)",
+      "Skill(artifact-design)",
+      "Artifact",
+      "Bash(npx expo *)",
+      "Bash(awk -F: '{print $1}')",
+      "Bash(node *)",
+      "Bash(eas --version)",
+      "Bash(npm install *)",
+      "Bash(eas build *)"
+    ]
+  }
+}
